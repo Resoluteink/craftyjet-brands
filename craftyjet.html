@@ -1,0 +1,1111 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>CraftyJet™ Brand Guidelines</title>
+        <link
+            href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap"
+            rel="stylesheet"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            body {
+                font-family: "Montserrat", Arial, sans-serif;
+                color: #000;
+                background: #fff;
+                margin: 0;
+                max-width: 900px;
+                margin-left: auto;
+                margin-right: auto;
+                padding-bottom: 140px;
+            }
+            header {
+                margin-bottom: 56px;
+                padding: 0;
+            }
+            .header-bg {
+                width: 100vw;
+                background: linear-gradient(90deg, #009de0 0%, #e10179 100%);
+                position: relative;
+                left: 50%;
+                right: 50%;
+                margin-left: -50vw;
+                margin-right: -50vw;
+                min-height: 120px;
+            }
+            .header-inner {
+                max-width: 900px;
+                margin: 0 auto;
+                padding: 42px 24px 38px 24px;
+                position: relative;
+            }
+            .header-inner img {
+                max-width: 300px;
+                vertical-align: middle;
+            }
+            .header-inner h1 {
+                font-size: 2.3em;
+                margin-top: 0;
+                margin-bottom: 18px;
+                color: #fff;
+                text-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+            }
+            .header-inner p {
+                color: #fff;
+                font-size: 1.13em;
+                margin-top: 0;
+            }
+            h2,
+            h3 {
+                font-weight: 700;
+                letter-spacing: 1px;
+            }
+            h2 {
+                font-size: 1.45em;
+                color: #009de0;
+                margin-top: 48px;
+                margin-bottom: 32px;
+            }
+            h3 {
+                font-size: 1.13em;
+                color: #009de0;
+                margin-top: 38px;
+                margin-bottom: 22px;
+            }
+            section {
+                margin-top: 44px;
+                margin-bottom: 44px;
+                padding: 0 24px;
+            }
+            .applications-list ul {
+                padding-left: 25px;
+            }
+            a {
+                color: #009de0;
+                text-decoration: none;
+                font-weight: 500;
+            }
+            .colour-samples {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                gap: 12px;
+                margin: 24px 0;
+            }
+            .colour-sample {
+                display: flex;
+                align-items: center;
+                margin-bottom: 9px;
+            }
+            .colour-block {
+                width: 36px;
+                height: 36px;
+                margin-right: 14px;
+                border-radius: 5px;
+                border: 2px solid #eee;
+            }
+            .clearspace-diagram {
+                background: #e9f6fb;
+                text-align: center;
+                padding: 18px 0 0 0;
+                margin: 20px 0;
+                border-radius: 9px;
+            }
+            .clearspace-diagram img {
+                display: block;
+                max-width: 280px;
+                margin: 0 auto;
+            }
+            .clearspace-caption {
+                display: block;
+                color: #666;
+                font-size: 0.92em;
+                text-align: center;
+                margin-top: 10px;
+            }
+            .combination-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+                gap: 16px;
+                margin: 28px 0;
+            }
+            .combo-box {
+                width: 120px;
+                height: 120px;
+                position: relative;
+                border-radius: 8px;
+            }
+            .combo-inner {
+                width: 60px;
+                height: 60px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                border-radius: 4px;
+            }
+            .logo-donts-grid {
+              display: grid;
+              grid-template-columns: repeat(3, 1fr);  /* Always 3 columns on desktop */
+              gap: 48px 42px;
+              margin: 40px 0 50px 0;
+              align-items: end;
+              justify-items: center;
+            }
+            .logo-donts-imgbox {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 110px;
+                min-width: 160px;
+                margin-bottom: 9px;
+                background: none;
+                border-radius: 12px;
+                position: relative;
+            }
+            .logo-donts-imgbox.outline {
+                box-shadow: 0 0 0 4px #ff60e7;
+            }
+            .logo-donts-imgbox.bg-yellow {
+                background: #ffdd04;
+            }
+            .logo-donts-imgbox.low-contrast {
+                background: repeating-linear-gradient(
+                    45deg,
+                    #bbb 0 12px,
+                    #eee 12px 24px
+                );
+            }
+            .logo-donts-imgbox img {
+                width: 110px;
+                height: auto;
+                display: block;
+                background: none;
+            }
+            .logo-donts-imgbox.stretch img {
+                width: 145px;
+                height: 55px;
+                object-fit: fill;
+            }
+            .logo-donts-imgbox.rotate img {
+                transform: rotate(-18deg);
+            }
+            .logo-donts-imgbox.shadow img {
+                filter: drop-shadow(0 6px 12px #888);
+                margin-top: -50px;
+            }
+            .logo-donts-caption {
+                font-size: 1.08em;
+                color: #ae6869;
+                text-align: center;
+                padding: 0 8px;
+                font-weight: 500;
+                line-height: 1.3;
+            }
+            .montserrat-sample {
+                font-family: "Montserrat", Arial, sans-serif;
+                font-size: 2em;
+                letter-spacing: 2px;
+                margin-top: 20px;
+                text-align: left;
+                background: #f5f5f5;
+                border-radius: 7px;
+                padding: 30px;
+                overflow-x: auto;
+                 white-space: normal;
+                 word-break: break-word;
+                 max-width: 100%;
+                 box-sizing: border-box;
+            }
+            .font-download-container {
+                position: relative;
+                margin: 21px 0 28px 0;
+                display: inline-block;
+            }
+            .font-download-btn {
+                background: #202124;
+                color: #fff;
+                font-weight: 500;
+                font-size: 1.07em;
+                border: none;
+                border-radius: 9px;
+                padding: 12px 26px 12px 54px;
+                cursor: pointer;
+                transition: background 0.15s;
+                box-shadow: 0 2px 7px rgba(0, 0, 0, 0.11);
+                outline: none;
+                position: relative;
+            }
+            .font-download-btn img {
+                position: absolute;
+                left: 14px;
+                top: 9px;
+                width: 28px;
+                height: 28px;
+            }
+            .font-download-btn:hover,
+            .font-download-btn:focus {
+                background: #333a40;
+            }
+            .logo-download-container {
+                position: relative;
+                margin: 24px 0 30px 0;
+                display: inline-block;
+            }
+            .logo-download-btn {
+                background: #009de0;
+                color: #fff;
+                font-weight: 500;
+                font-size: 1.07em;
+                border: none;
+                border-radius: 8px;
+                padding: 12px 28px;
+                cursor: pointer;
+                transition: background 0.18s;
+                box-shadow: 0 2px 7px rgba(0, 0, 0, 0.09);
+                outline: none;
+            }
+            .logo-download-btn:hover,
+            .logo-download-btn:focus {
+                background: #005fa3;
+            }
+            .logo-download-list {
+                display: none;
+                position: absolute;
+                left: 0;
+                top: 45px;
+                min-width: 180px;
+                background: #fff;
+                border-radius: 9px;
+                box-shadow: 0 3px 16px rgba(0, 0, 0, 0.14);
+                z-index: 25;
+                padding: 14px 0;
+            }
+            .logo-download-container:hover .logo-download-list,
+            .logo-download-container:focus-within .logo-download-list {
+                display: block;
+            }
+            .logo-download-list a {
+                display: block;
+                padding: 10px 26px;
+                color: #009de0;
+                font-weight: 600;
+                font-size: 1.05em;
+                text-decoration: none;
+                transition: background 0.12s;
+            }
+            .logo-download-list a:hover {
+                background: #e9f6fb;
+                color: #005fa3;
+            }
+            .logo-download-list span {
+                color: #666;
+                font-size: 0.95em;
+                margin-left: 8px;
+            }
+            footer {
+                background: #000;
+                color: #fff;
+                padding: 32px 24px 20px 24px;
+                margin-top: 0;
+            }
+            .footer-content {
+                max-width: 900px;
+                margin: 0 auto;
+                text-align: center;
+            }
+            .footer-main {
+                font-size: 0.95em;
+                color: #ccc;
+                margin-bottom: 20px;
+            }
+            .footer-copyright {
+                margin-top: 16px;
+                font-size: 0.96em;
+                color: #aaa;
+            }
+            .social-footer {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 24px;
+                margin: 16px 0;
+            }
+            .social-footer a {
+                display: flex;
+                align-items: center;
+                color: #fff;
+                transition: opacity 0.2s;
+            }
+            .social-footer a:hover {
+                opacity: 0.8;
+            }
+            .social-footer img {
+                width: 24px;
+                height: 24px;
+                margin-right: 8px;
+            }
+            .profile-showcase {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+                gap: 16px;
+                margin: 20px 0;
+            }
+            .profile-showcase img {
+                width: 100%;
+                max-width: 120px;
+                border-radius: 8px;
+                border: 1px solid #ddd;
+            }
+            .floating-social {
+                position: fixed;
+                bottom: 24px;
+                right: 24px;
+                z-index: 105;
+                display: flex;
+                gap: 12px;
+                flex-direction: column;
+            }
+            .floating-social .fb-btn {
+                background: #1877f2;
+                color: #fff;
+            }
+            .floating-social .ig-btn {
+                background: linear-gradient(135deg, #fd47ad, #6093ff, #8731ff);
+                color: #fff;
+            }
+            .floating-social a {
+                border-radius: 10px;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.14);
+                padding: 10px 18px;
+                text-align: center;
+                font-weight: 600;
+                font-family: Montserrat, Arial, sans-serif;
+                text-decoration: none;
+                font-size: 0.99em;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+            .floating-social img {
+                width: 22px;
+                height: 22px;
+                vertical-align: middle;
+            }
+            .contact-above {
+                margin: 44px 24px 32px 24px;
+                padding: 24px;
+                background: #f9f9f9;
+                border-left: 5px solid #009de0;
+                text-align: center;
+            }
+            .cmyk-swatch {
+                font-size: 0.94em;
+                margin-left: 8px;
+                color: #888;
+            }
+            .hamburger { position:fixed; top:24px; right:24px; z-index:150; width:48px; height:48px; background:#009de0; border-radius:12px; display:flex; flex-direction:column; justify-content:center; align-items:center; cursor:pointer; box-shadow:0 4px 8px rgba(0,0,0,0.13);}
+            .hamburger span { width:24px; height:3px; background:#fff; margin:2px 0; border-radius:2px; transition:all .2s;}
+            .menu { position:fixed; top:76px; right:24px; background:#fff; border-radius:12px; box-shadow:0 4px 14px rgba(0,0,0,0.13); padding:20px 28px; min-width:170px; display:none; z-index:120;}
+            .menu.open { display:block;}
+            .menu ul { list-style:none; padding:0; margin:0;}
+            .menu ul li { margin-bottom:12px;}
+            .menu ul li:last-child { margin-bottom:0;}
+            .menu a { color:#009de0; font-weight:600; font-size:1.09em;}
+            .menu-separator {
+              border-bottom:1.5px solid #DEF4FF;
+              margin:10px 0 8px 0;
+              height:0;
+              list-style:none;
+            }
+
+            @media (max-width: 600px) {
+                .header-inner {
+                    padding: 24px 8px;
+                }
+                section {
+                    padding: 0 8px;
+                }
+                body { padding-left: 0; padding-right: 0; }
+                h2,
+                h3 {
+                    margin-top: 1.8em;
+                }
+                .applications-list {
+                    columns: 1;
+                }
+                .colour-samples,
+                .combination-grid {
+                    grid-template-columns: 1fr;
+                }
+                .header-bg {
+                    min-height: 120px;
+                }
+                .floating-social {
+                    bottom: 5px;
+                    right: 6px;
+                }
+                footer {
+                    padding: 24px 8px 10px 8px;
+                }
+                .logo-donts-grid { grid-template-columns: 1fr; }
+                .montserrat-sample {
+                    font-size: 1.13em;
+                    padding: 11px;
+                    max-width: 98vw;
+                  }
+
+            }
+            @media (max-width: 900px) {
+              .logo-donts-grid { grid-template-columns: repeat(2, 1fr); }
+              section { padding: 0 14px; }
+            }
+            @media print {
+              .hamburger,
+              .menu,
+              .floating-social {
+                display: none !important;
+                visibility: hidden !important;
+                height: 0 !important;
+                width: 0 !important;
+                pointer-events: none !important;
+                position: absolute !important;
+                left: -9999px !important;
+                top: -9999px !important;
+              }
+            }
+
+        </style>
+    </head>
+    <!-- Hamburger Menu (Floating, Always Visible) -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="menu" id="navMenu">
+        <ul>
+          <li><a href="#logo" onclick="closeMenu()">Logo</a></li>
+          <li><a href="#typography" onclick="closeMenu()">Typography</a></li>
+          <li><a href="#colour" onclick="closeMenu()">Colour</a></li>
+          <li><a href="#applications" onclick="closeMenu()">Applications</a></li>
+          <li><a href="#socialmedia" onclick="closeMenu()">Social Media Usage</a></li>
+          <li><a href="#printguide" onclick="closeMenu()">Printing Guide</a></li>
+          <li class="menu-separator"></li>
+              <li>
+                <a href="#" onclick="closeMenu();downloadBrandGuidelinesPDF()" style="display:flex;align-items:center;">
+                    <svg style="width:1.1em;height:1.1em;margin-right:6px;" viewBox="0 0 448 512" fill="#009de0" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M272 288h56c13.25 0 24-10.75 24-24V56c0-13.25-10.75-24-24-24H120C106.7 32 96 42.75 96 56v208c0 13.25 10.75 24 24 24h56c0 13.25 10.75 24 24 24h48C261.3 312 272 301.3 272 288zm128 112h-24V360c0-13.2-10.8-24-24-24s-24 10.8-24 24v40H120v-40c0-13.2-10.8-24-24-24s-24 10.8-24 24v40H48c-26.5 0-48 21.5-48 48v16c0 8.8 7.2 16 16 16h416c8.8 0 16-7.2 16-16v-16C448 421.5 426.5 400 400 400z"/>
+                      <path d="M207 316.1l-95.5-106c-9.5-10.6-2.6-27.1 12.4-27.1H160V56c0-8.8 7.2-16 16-16h96c8.8 0 16 7.2 16 16v127h35.6c15.1 0 22 16.6 12.4 27.1l-96.5 106c-6 6.6-16.5 6.7-22.5 0z"/>
+                    </svg>
+                  Download PDF
+                </a>
+              </li>
+        </ul>
+      </nav>
+
+        <!-- Floating Social Buttons (Bottom Right) -->
+        <div class="floating-social">
+            <a
+                href="https://facebook.com/craftyjetprints"
+                target="_blank"
+                class="fb-btn"
+            >
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+                    alt="FB"
+                />Follow us on Facebook
+            </a>
+            <a
+                href="https://instagram.com/craftyjetprints"
+                target="_blank"
+                class="ig-btn"
+            >
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+                    alt="Instagram"
+                />Follow us on Instagram
+            </a>
+        </div>
+
+        <header>
+            <div class="header-bg">
+                <div class="header-inner">
+                    <img
+                        src="https://www.notion.so/image/attachment%3A74a5d360-4632-4429-ba83-25349f2d9586%3ACraftyJet-Logo-White-Outline.png?table=block&id=2949437d-c275-806d-a726-ff7d09c7e500&spaceId=c4b78b3f-ba6a-405f-bd8d-ecbf0fec84fa&width=2000&userId=&cache=v2"
+                        alt="CraftyJet™ Logo"
+                    /><br>
+                    <br><br><h1>CraftyJet™ Brand Guidelines</h1>
+                    <p>
+                        Welcome to the brand guidelines for CraftyJet™, a
+                        game-changing compact DTF printer designed to empower
+                        home crafters and hobbyists alike. Designed with
+                        precision and purpose for the crafting market, this
+                        printer brings professional-grade quality into home
+                        studios or tight workspaces, without compromising on
+                        vibrancy, reliability or performance.<br />
+                        These guidelines define how to present CraftyJet™
+                        confidently and consistently across every touchpoint,
+                        ensuring the innovation and accessibility of the brand
+                        is always reflected.
+                    </p>
+                    <br> <p><b>Updated:</b> October 2025</p>
+                </div>
+            </div>
+        </header>
+
+        <section id="logo">
+            <h2>Logo</h2>
+            <h3>Design & Legibility</h3>
+            <p>
+                The CraftyJet™ logo is designed to remain clear at all display
+                sizes. Use the official artwork—never redraw, distort, recolour,
+                or add effects.<br />
+                No maximum size, but
+                <strong>minimum size is 20px (screen) and ¼ inch (print)</strong
+                >. If legibility is lost, it's too small.
+            </p>
+            <h3>On Colour</h3>
+            <p>
+                Use only on White, Cerulean, Black, School Bus Yellow, Rose, or
+                Oslo Gray backgrounds for clarity.
+            </p>
+            <h3>Clearspace</h3>
+            <p>
+                Leave a margin at least the height of the 'C' in CraftyJet™ (x)
+                on all sides. No text or graphics should invade this area.
+            </p>
+            <div class="clearspace-diagram">
+                <img
+                    src="https://www.notion.so/image/attachment%3A110c42e7-e50b-485d-9e81-9068ec499496%3AScreenshot_2025-10-22_at_14.20.16.png?table=block&id=2949437d-c275-80f5-b018-efb050dfa21a&spaceId=c4b78b3f-ba6a-405f-bd8d-ecbf0fec84fa&width=500&userId=&cache=v2"
+                    alt="Clearspace diagram"
+                />
+                <div class="clearspace-caption">
+                    Clearspace = x-height of 'C'
+                </div>
+            </div>
+        </section>
+
+        <section id="logo-donts">
+          <h2>Logo Usage Don'ts</h2>
+          <div class="logo-donts-grid">
+            <div>
+              <div class="logo-donts-imgbox stretch">
+                <img src="https://www.notion.so/image/attachment%3A74a5d360-4632-4429-ba83-25349f2d9586%3ACraftyJet-Logo-White-Outline.png?table=block&id=2949437d-c275-806d-a726-ff7d09c7e500&spaceId=c4b78b3f-ba6a-405f-bd8d-ecbf0fec84fa&width=2000&userId=&cache=v2" alt="Don't stretch">
+              </div>
+              <div class="logo-donts-caption">Don’t stretch</div>
+            </div>
+            <div>
+              <div class="logo-donts-imgbox rotate">
+                <img src="https://www.notion.so/image/attachment%3A74a5d360-4632-4429-ba83-25349f2d9586%3ACraftyJet-Logo-White-Outline.png?table=block&id=2949437d-c275-806d-a726-ff7d09c7e500&spaceId=c4b78b3f-ba6a-405f-bd8d-ecbf0fec84fa&width=2000&userId=&cache=v2" alt="Don't rotate">
+              </div>
+              <div class="logo-donts-caption">Don’t rotate</div>
+            </div>
+            <div>
+              <div class="logo-donts-imgbox outline">
+                <img src="https://www.notion.so/image/attachment%3A74a5d360-4632-4429-ba83-25349f2d9586%3ACraftyJet-Logo-White-Outline.png?table=block&id=2949437d-c275-806d-a726-ff7d09c7e500&spaceId=c4b78b3f-ba6a-405f-bd8d-ecbf0fec84fa&width=2000&userId=&cache=v2" alt="Don't add outline">
+              </div>
+              <div class="logo-donts-caption">Don’t add outline</div>
+            </div>
+            <div>
+              <div class="logo-donts-imgbox bg-yellow">
+                <img src="https://www.notion.so/image/attachment%3A74a5d360-4632-4429-ba83-25349f2d9586%3ACraftyJet-Logo-White-Outline.png?table=block&id=2949437d-c275-806d-a726-ff7d09c7e500&spaceId=c4b78b3f-ba6a-405f-bd8d-ecbf0fec84fa&width=2000&userId=&cache=v2" style="opacity:0.7;" alt="Don't use unapproved colours">
+              </div>
+              <div class="logo-donts-caption">Don’t use unapproved colours</div>
+            </div>
+            <div>
+              <div class="logo-donts-imgbox shadow">
+                <img src="https://www.notion.so/image/attachment%3A74a5d360-4632-4429-ba83-25349f2d9586%3ACraftyJet-Logo-White-Outline.png?table=block&id=2949437d-c275-806d-a726-ff7d09c7e500&spaceId=c4b78b3f-ba6a-405f-bd8d-ecbf0fec84fa&width=2000&userId=&cache=v2" alt="Don't use effects">
+              </div>
+              <div class="logo-donts-caption">Don’t use effects</div>
+            </div>
+            <div>
+              <div class="logo-donts-imgbox low-contrast">
+                <img src="https://www.notion.so/image/attachment%3A74a5d360-4632-4429-ba83-25349f2d9586%3ACraftyJet-Logo-White-Outline.png?table=block&id=2949437d-c275-806d-a726-ff7d09c7e500&spaceId=c4b78b3f-ba6a-405f-bd8d-ecbf0fec84fa&width=2000&userId=&cache=v2" alt="Don't place on patterned background">
+              </div>
+              <div class="logo-donts-caption">Don’t place on patterned/low-contrast background</div>
+            </div>
+          </div>
+            <div class="logo-download-container">
+                <button
+                    class="logo-download-btn"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                >
+                    Download CraftyJet™ Logo
+                </button>
+                <div class="logo-download-list">
+                    <a
+                        href="https://www.notion.so/image/attachment%3A74a5d360-4632-4429-ba83-25349f2d9586%3ACraftyJet-Logo-White-Outline.png?table=block&id=2949437d-c275-806d-a726-ff7d09c7e500&spaceId=c4b78b3f-ba6a-405f-bd8d-ecbf0fec84fa&width=1420&userId=&cache=v2"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        download
+                    >
+                        PNG <span>(Transparent, High-res)</span>
+                    </a>
+                    <a
+                        href="https://www.notion.so/image/attachment%3Af1578a0d-3e98-4c61-899d-ef15c20e60a0%3ACraftyJet_Logo_White_Outline.svg?table=block&id=2949437d-c275-8001-90da-e9d3e502d1d4&spaceId=c4b78b3f-ba6a-405f-bd8d-ecbf0fec84fa&userId=&cache=v2"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        download
+                    >
+                        SVG <span>(Vector, Web/Print)</span>
+                    </a>
+                    <a
+                        href="https://file.notion.so/f/f/c4b78b3f-ba6a-405f-bd8d-ecbf0fec84fa/e11c19e9-715e-4a3c-af96-58c3aee53df9/CraftyJet_Logo_White_Outline.eps?table=block&id=2949437d-c275-80aa-9638-c649c5619126&spaceId=c4b78b3f-ba6a-405f-bd8d-ecbf0fec84fa&expirationTimestamp=1761170400000&signature=ltB0kYbOOMNoVLtiE4zNl_X4G-Wh_-51dT3HsLiPcwI&downloadName=CraftyJet+Logo+White+Outline.eps"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        download
+                    >
+                        EPS <span>(Vector, Print)</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="typography">
+            <h2>Typography</h2>
+            <h3>Primary Typeface</h3>
+            <p>
+                Montserrat is the cornerstone of CraftyJet™ visual
+                identity—modern, geometric, and highly versatile for headlines,
+                subheadings, labels, packaging, and body text. All CraftyJet™
+                touchpoints (print and digital) must use Montserrat for clarity
+                and consistency.
+            </p>
+            <div class="montserrat-sample">
+                Montserrat ABCDEFGHIJKLMNOPQRSTUVWXYZ<br />
+                abcdefghijklmnopqrstuvwxyz 0123456789
+            </div><br>
+            <div class="font-download-container">
+                <a
+                    href="https://fonts.google.com/specimen/Montserrat"
+                    class="font-download-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <img
+                        src="https://cdn.iconscout.com/icon/free/png-256/free-google-fonts-icon-svg-download-png-2931439.png?f=webp"
+                        alt="Google Fonts logo"
+                    />
+                    Download Montserrat Font
+                </a>
+            </div>
+            <br />
+            <h3>Weights</h3>
+            <ul>
+                <li>
+                    <b>Thin (100):</b> Premium packaging accents, oversized
+                    display text.
+                </li>
+                <li>
+                    <b>Regular (400):</b> Body copy, paragraph text,
+                    documentation.
+                </li>
+                <li>
+                    <b>Medium (500):</b> Section headings, subheads, strong
+                    interface text.
+                </li>
+                <li>
+                    <b>Bold (700):</b> Main headings and titles for strong
+                    impact.
+                </li>
+                <li>
+                    <b>ExtraBold (800):</b> Reserved for maximum attention (hero
+                    graphics, banners).
+                </li>
+            </ul>
+            <br />
+            <h3>Hierarchy & Examples</h3>
+            <p>
+                <span style="font-weight: 700; font-size: 1.6em; display: block"
+                    >CraftyJet™ Bold Headline Example</span
+                >
+                <span
+                    style="
+                        font-weight: 500;
+                        font-size: 1.25em;
+                        display: block;
+                        margin-top: 10px;
+                    "
+                    >Subheadline Example - Montserrat Medium</span
+                >
+                <span
+                    style="
+                        font-weight: 400;
+                        font-size: 1.05em;
+                        display: block;
+                        margin-top: 10px;
+                    "
+                    >This is a sentence using Montserrat Regular weight for body
+                    text for all brochures and documentation.</span
+                >
+                <span
+                    style="
+                        font-weight: 100;
+                        font-size: 1.1em;
+                        display: block;
+                        margin-top: 10px;
+                    "
+                    >This is thin weight as accent (premium layouts).</span
+                >
+            </p>
+
+            <h3>Don’ts</h3>
+            <ul>
+                <li>Do not use fonts other than Montserrat.</li>
+                <li>
+                    No decorative/script fonts or all-uppercase for body text.
+                </li>
+            </ul>
+        </section>
+<br>
+        <section id="colour">
+            <h2>Colour</h2>
+            <h3>Primary Palette</h3>
+            <p>
+                The primary palette contains the core colours that define our
+                identity, used in the logo, marketing, and main branded assets.
+                The listed CMYK formulations are foundational and must be
+                applied exactly for any print output.<br />
+                <br /><!-- Coolors Palette Widget -->
+                <script src="https://coolors.co/palette-widget/widget.js"></script>
+                <script data-id="07165099087142709">
+                    new CoolorsPaletteWidget(
+                        "07165099087142709",
+                        [
+                            "000000",
+                            "ffffff",
+                            "87898a",
+                            "ffdd04",
+                            "e10179",
+                            "009de0",
+                        ],
+                        "CraftyJet™",
+                    );
+                </script>
+                <br />
+                <br /><b>Tip:</b> Always use these main CMYK values whenever
+                designing official CraftyJet branding. Consistent application
+                ensures our brand remains strong and instantly recognisable.
+            </p>
+            <div class="colour-samples">
+                <div class="colour-sample">
+                    <div class="colour-block" style="background: #000000"></div>
+                    Black – #000000
+                    <span class="cmyk-swatch">CMYK: 0,0,0,100</span>
+                </div>
+                <div class="colour-sample">
+                    <div
+                        class="colour-block"
+                        style="background: #ffffff; border: 2px solid #ccc"
+                    ></div>
+                    White – #FFFFFF
+                    <span class="cmyk-swatch">CMYK: 0,0,0,0</span>
+                </div>
+                <div class="colour-sample">
+                    <div class="colour-block" style="background: #87898a"></div>
+                    Oslo Gray – #87898A
+                    <span class="cmyk-swatch">CMYK: 0,0,0,54</span>
+                </div>
+                <div class="colour-sample">
+                    <div class="colour-block" style="background: #ffdd04"></div>
+                    School Bus Yellow – #FFDD04
+                    <span class="cmyk-swatch">CMYK: 0,14,98,0</span>
+                </div>
+                <div class="colour-sample">
+                    <div class="colour-block" style="background: #e10179"></div>
+                    Rose – #E10179
+                    <span class="cmyk-swatch">CMYK: 0,92,28,0</span>
+                </div>
+                <div class="colour-sample">
+                    <div class="colour-block" style="background: #009de0"></div>
+                    Cerulean – #009DE0
+                    <span class="cmyk-swatch">CMYK: 100,13,0,12</span>
+                </div>
+            </div>
+            <br />
+            <h3>Pastels & Brights</h3>
+            <p>
+                Pastel colours provide accent and variety—use sparingly and
+                never as a substitute for primary palette colours in main brand
+                assets or logo presentation.
+            </p>
+            <div class="colour-samples">
+                <div class="colour-sample">
+                    <div class="colour-block" style="background: #00d65a"></div>
+                    Green – #00D65A
+                    <span class="cmyk-swatch">CMYK: 100,0,100,0</span>
+                </div>
+                <div class="colour-sample">
+                    <div class="colour-block" style="background: #00bfff"></div>
+                    Light Blue – #00BFFF
+                    <span class="cmyk-swatch">CMYK: 100,15,0,0</span>
+                </div>
+                <div class="colour-sample">
+                    <div class="colour-block" style="background: #1f4e99"></div>
+                    Navy Blue – #1F4E99
+                    <span class="cmyk-swatch">CMYK: 100,70,0,0</span>
+                </div>
+                <div class="colour-sample">
+                    <div class="colour-block" style="background: #8b3f99"></div>
+                    Purple – #8B3F99
+                    <span class="cmyk-swatch">CMYK: 60,100,0,0</span>
+                </div>
+                <div class="colour-sample">
+                    <div class="colour-block" style="background: #ffc0cb"></div>
+                    Light Pink – #FFC0CB
+                    <span class="cmyk-swatch">CMYK: 0,30,0,0</span>
+                </div>
+                <div class="colour-sample">
+                    <div class="colour-block" style="background: #ff0000"></div>
+                    Red – #FF0000
+                    <span class="cmyk-swatch">CMYK: 0,100,100,0</span>
+                </div>
+                <div class="colour-sample">
+                    <div class="colour-block" style="background: #ff8c00"></div>
+                    Orange – #FF8C00
+                    <span class="cmyk-swatch">CMYK: 0,60,100,0</span>
+                </div>
+                <div class="colour-sample">
+                    <div class="colour-block" style="background: #ffd700"></div>
+                    Gold – #FFD700
+                    <span class="cmyk-swatch">CMYK: 0,30,100,0</span>
+                </div>
+                <div class="colour-sample">
+                    <div class="colour-block" style="background: #ffff00"></div>
+                    Yellow – #FFFF00
+                    <span class="cmyk-swatch">CMYK: 0,5,100,0</span>
+                </div>
+                <div class="colour-sample">
+                    <div class="colour-block" style="background: #ff1493"></div>
+                    Hot Pink – #FF1493
+                    <span class="cmyk-swatch">CMYK: 5,100,0,0</span>
+                </div>
+            </div>
+
+            <h3>Greys</h3>
+            <div class="colour-samples">
+                <div class="colour-sample">
+                    <div class="colour-block" style="background: #000"></div>
+                    Black – #000
+                    <span class="cmyk-swatch">CMYK: 0,0,0,100</span>
+                </div>
+                <div class="colour-sample">
+                    <div class="colour-block" style="background: #555"></div>
+                    Dark Grey – #555
+                    <span class="cmyk-swatch">CMYK: 0,0,0,70</span>
+                </div>
+                <div class="colour-sample">
+                    <div class="colour-block" style="background: #808080"></div>
+                    Medium Grey – #808080
+                    <span class="cmyk-swatch">CMYK: 0,0,0,50</span>
+                </div>
+                <div class="colour-sample">
+                    <div class="colour-block" style="background: #cccccc"></div>
+                    Light Grey – #CCCCCC
+                    <span class="cmyk-swatch">CMYK: 0,0,0,30</span>
+                </div>
+                <div class="colour-sample">
+                    <div
+                        class="colour-block"
+                        style="background: #f5f5f5; border: 2px solid #ccc"
+                    ></div>
+                    Off White – #F5F5F5
+                    <span class="cmyk-swatch">CMYK: 0,0,0,10</span>
+                </div>
+            </div>
+            <br />
+
+            <h3>Approved Combinations</h3>
+            <p>High-contrast combinations for accessibility and impact:</p>
+            <div class="combination-grid">
+                <div class="combo-box" style="background: #ffdd04">
+                    <div class="combo-inner" style="background: #000"></div>
+                </div>
+                <div class="combo-box" style="background: #000">
+                    <div class="combo-inner" style="background: #fff"></div>
+                </div>
+                <div class="combo-box" style="background: #009de0">
+                    <div class="combo-inner" style="background: #fff"></div>
+                </div>
+                <div class="combo-box" style="background: #e10179">
+                    <div class="combo-inner" style="background: #fff"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="applications">
+            <h2>Applications</h2>
+            <div class="applications-list">
+                <ul>
+                    <li>Business cards</li>
+                    <li>Merchandise</li>
+                    <li>Print materials</li>
+                    <li>Out of home</li>
+                    <li>Digital ads</li>
+                    <li>Website mobile</li>
+                    <li>Website laptop</li>
+                    <li>Any other relevant applications</li>
+                </ul>
+            </div>
+            <p><b>Brand application visuals/examples coming soon.</b></p>
+        </section>
+<br>
+        <section id="socialmedia">
+            <h2>Social Media Usage</h2>
+            <p>
+                Use official logo and colours for all profiles. NEVER use
+                unapproved filters, overlays, or stickers.<br />
+                Tag: #CraftyJetPrints when showcasing your work.<br />
+                Handle: @craftyjetprints (Facebook & Instagram)
+            </p>
+
+            <h3>Profile Icons</h3>
+            <div class="profile-showcase">
+                <img
+                    src="https://www.notion.so/image/attachment%3A0fa7298e-5efd-42e7-adff-e916e46b3744%3ACraftyProfile-Pink.jpg?table=block&id=2949437d-c275-80be-be31-d103068073f4&spaceId=c4b78b3f-ba6a-405f-bd8d-ecbf0fec84fa&width=2000&userId=&cache=v2"
+                    alt="Pink Profile"
+                />
+                <img
+                    src="https://www.notion.so/image/attachment%3Ab590c40c-cf89-4d0e-80bd-7d9eae228516%3ACraftyProfile-Blue.jpg?table=block&id=2949437d-c275-8089-bb09-d8dfe7938398&spaceId=c4b78b3f-ba6a-405f-bd8d-ecbf0fec84fa&width=2000&userId=&cache=v2"
+                    alt="Blue Profile"
+                />
+                <img
+                    src="https://www.notion.so/image/attachment%3Af5003a7b-481c-4cc0-995a-06971c6d8caf%3ACraftyProfile-Black.jpg?table=block&id=2949437d-c275-80f2-b21d-f3b9775773e1&spaceId=c4b78b3f-ba6a-405f-bd8d-ecbf0fec84fa&width=2000&userId=&cache=v2"
+                    alt="Black Profile"
+                />
+                <img
+                    src="https://www.notion.so/image/attachment%3A466b6f67-efb4-43c4-a15f-4868a62052fd%3ACraftyProfile-White.jpg?table=block&id=2949437d-c275-8003-81c4-f9fb9e006a94&spaceId=c4b78b3f-ba6a-405f-bd8d-ecbf0fec84fa&width=2000&userId=&cache=v2"
+                    alt="White Profile"
+                />
+            </div>
+
+            <h3>Do's and Don'ts</h3>
+            <ul>
+                <li>Do use provided templates and assets.</li>
+                <li>Do maintain creative, positive messaging.</li>
+                <li>Don't use unapproved visual treatments.</li>
+                <li>Don't misrepresent CraftyJet's products.</li>
+            </ul>
+        </section>
+<br>
+        <section id="printguide">
+            <h2>Printing Guide</h2>
+            <ul>
+                <li>
+                    Always use the CMYK colour values supplied in this document
+                    for any physical print.
+                </li>
+                <li>
+                    Export artwork as PDF/X-1a, TIFF, or EPS for print
+                    production; do not use standard RGB files for print output.
+                </li>
+                <li>
+                    Ask your print provider if any custom adjustments are needed
+                    for print conditions.
+                </li>
+                <li>
+                    Preview with Pantone swatches if required for spot colour
+                    printing.
+                </li>
+                <li>
+                    For highest fidelity, lock vector format and embed fonts in
+                    exported files.
+                </li>
+            </ul>
+        </section>
+
+        <!-- Contact box above footer -->
+        <div class="contact-above">
+            <strong>Questions, usage requests, or new asset needs?</strong
+            ><br />
+            Contact us at
+            <a href="mailto:hello@craftyjet.co.uk">hello@craftyjet.co.uk</a>
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-main">
+                    &copy; <span id="year"></span> CraftyJet™ by Resolute. All rights reserved.
+                </div>
+                <div class="footer-copyright">
+                    CraftyJet™ is a registered brand of Resolute DTG Ltd.<br />
+                    All content, trademarks, and imagery are the exclusive
+                    property of Resolute DTG Ltd.<br />
+                    Use of these materials is subject to brand terms and conditions.
+                </div>
+                <div class="social-footer">
+                    <a
+                        href="https://instagram.com/craftyjetprints"
+                        target="_blank"
+                    >
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+                            alt="Instagram"
+                        />
+                        @craftyjetprints
+                    </a>
+                    <a
+                        href="https://facebook.com/craftyjetprints"
+                        target="_blank"
+                    >
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+                            alt="Facebook"
+                        />
+                        @craftyjetprints
+                    </a>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script>
+           document.getElementById('hamburger').onclick = function() {
+             document.getElementById('navMenu').classList.toggle('open');
+           }
+           function closeMenu() {
+             document.getElementById('navMenu').classList.remove('open');
+           }
+           document.body.addEventListener('click', function(e){
+             var hamburger = document.getElementById('hamburger');
+             var navMenu = document.getElementById('navMenu');
+             if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+               navMenu.classList.remove('open');
+             }
+           });
+
+           function downloadBrandGuidelinesPDF() {
+             const options = {
+               method: "POST",
+               url: "https://api.pdfendpoint.com/v1/convert",
+               headers: {
+                 "Content-Type": "application/json",
+                 "Authorization": "Bearer pdfe_live_8657f878323a7c14f122f3508f25722d9b1b"
+               },
+               data: JSON.stringify({
+                 url: window.location.href,
+                 sandbox: true,
+                 orientation: "vertical",
+                 page_size: "A4",
+                 margin_top: "1cm",
+                 margin_bottom: "1cm",
+                 margin_left: "1cm",
+                 margin_right: "1cm",
+                 no_blank_pages: true,
+                 no_javascript: true,
+                 no_links: true,
+                 accept_lang: "en-US",
+                 accept_encoding: "utf-8",
+                 no_backgrounds: false
+               })
+             };
+             axios.request(options).then(function (response) {
+               window.open(response.data.url, "_blank");
+             }).catch(function (error) {
+               alert('PDF export failed.');
+               console.error(error);
+             });
+           }
+         </script>
+    </body>
+</html>
